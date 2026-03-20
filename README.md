@@ -14,12 +14,17 @@ Template for building guitar pedal effects on the [Hothouse DIY DSP Platform](ht
    ```bash
    git submodule update --init --recursive
    ```
-4. Enable the pre-commit formatting hook:
+4. Build the submodule libraries (from the repo root):
+   ```bash
+   (cd libDaisy && make)
+   (cd DaisySP && make)
+   ```
+5. Enable the pre-commit formatting hook:
    ```bash
    git config core.hooksPath .githooks
    ```
-5. Set `TARGET` in the `Makefile` to your effect name
-6. Write your DSP code in `main.cpp`
+6. Set `TARGET` in the `Makefile` to your effect name
+7. Write your DSP code in `main.cpp`
 
 ## Building & Flashing
 
