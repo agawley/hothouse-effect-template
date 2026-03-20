@@ -11,6 +11,7 @@ A guitar pedal effect for the **Hothouse DIY DSP Platform** (Cleveland Music Co.
 Requires the [Daisy toolchain](https://daisy.audio/tutorials/cpp-dev-env/). The build system is the standard Daisy Makefile.
 
 ```bash
+make submodules   # Initialize/update and build submodule libraries (first-time setup)
 make              # Build firmware (output: build/effect.bin)
 make clean        # Clean build artifacts
 make program-dfu  # Flash via USB (DFU mode — hold BOOT+RESET on Daisy, or long-press footswitch 1)
