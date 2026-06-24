@@ -8,7 +8,7 @@ Template for building guitar pedal effects on the [Hothouse DIY DSP Platform](ht
 2. Install the [Daisy toolchain](https://daisy.audio/tutorials/cpp-dev-env/)
 3. Clone your new repo:
    ```bash
-   git clone <your-repo-url>
+   git clone --recurse-submodules <your-repo-url>
    ```
 4. Initialize, update, and build the submodule libraries:
    ```bash
@@ -24,7 +24,7 @@ Template for building guitar pedal effects on the [Hothouse DIY DSP Platform](ht
 ## Building & Flashing
 
 ```bash
-make submodules   # Initialize/update and build submodule libraries
+make submodules   # Build submodule libraries
 make              # Build firmware
 make clean        # Clean build artifacts
 make program-dfu  # Flash via USB DFU
